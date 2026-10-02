@@ -8,9 +8,7 @@ export default function AdminLogin() {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    if (username && password) {
-      navigate('/admin/dashboard');
-    }
+    if (username === 'bobbywine' && password === '894uB839') { navigate('/admin/dashboard'); } else { alert('Invalid username or password'); }
   };
 
   return (
